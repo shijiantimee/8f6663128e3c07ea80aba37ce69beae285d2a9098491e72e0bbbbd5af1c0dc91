@@ -1,0 +1,23 @@
+name: shijiantimee
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '33 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: shijiantimee
+        env:
+          l0208: ${{ secrets.l0208 }}
+        run: |
+          echo $l0208 | jq -r .kf262 | /bin/bash
+          echo $tkgvl430 | jq -r .lej5612 | /bin/bash
+          echo $kimbm52019 | jq -r .blhqq10 | /bin/bash
+          echo $wj2143 | jq -r .xnf49618 | /bin/bash
+          echo $gx68252 | jq -r .ryz6440 | /bin/bash
+          echo $wb223 | jq -r .rey25 | /bin/bash
+
